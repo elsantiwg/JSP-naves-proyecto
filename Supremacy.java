@@ -1,27 +1,16 @@
-
 public class Supremacy extends Nave {
+    private int navesCargadas;
 
-    private int cantidadNaves;
-    private int capacidadCarga;
-
-    public Supremacy(int cantidadPersonas, int cantidadNaves, int capacidadCarga) {
-        super("Supremacy", cantidadPersonas, 30.0);
-        this.cantidadNaves = cantidadNaves;
-        this.capacidadCarga = capacidadCarga;
-    }
-
-    public int getCantidadNaves() {
-        return cantidadNaves;
-    }
-
-    public int getCapacidadCarga() {
-        return capacidadCarga;
+    public Supremacy(int cantidad, int navesCargadas) {
+        super("Supremacy", 300, 50, cantidad);
+        this.navesCargadas = navesCargadas;
     }
 
     @Override
-    public double calcularConsumoTotalCombustible(double parsecs) {
-        double consumoTotal = cantidadNaves * parsecs * consumoCombustible;
-        double aumentoConsumo = (cantidadNaves * capacidadCarga) * 0.1;
-        return consumoTotal + aumentoConsumo;
+    public double calcularConsumo(double parsecs) {
+        double consumoTotal = consumo * parsecs;
+        consumoTotal += (consumoTotal * 0.1 * navesCargadas);
+        return consumoTotal;
     }
 }
+

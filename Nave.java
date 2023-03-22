@@ -1,25 +1,31 @@
 public abstract class Nave {
     protected String tipo;
-    protected int capacidadPersonas;
-    protected double consumoCombustible;
+    protected int capacidad;
+    protected double consumo;
+    protected int cantidad;
 
-    public Nave(String tipo, int capacidadPersonas, double consumoCombustible) {
+    public Nave(String tipo, int capacidad, double consumo, int cantidad) {
         this.tipo = tipo;
-        this.capacidadPersonas = capacidadPersonas;
-        this.consumoCombustible = consumoCombustible;
+        this.capacidad = capacidad;
+        this.consumo = consumo;
+        this.cantidad = cantidad;
     }
+
+    public abstract double calcularConsumo(double parsecs);
 
     public String getTipo() {
         return tipo;
     }
 
-    public int getCapacidadPersonas() {
-        return capacidadPersonas;
+    public int getCapacidad() {
+        return capacidad;
     }
 
-    public double getConsumoCombustible() {
-        return consumoCombustible;
+    public double getConsumo() {
+        return consumo;
     }
 
-    public abstract double calcularConsumoTotalCombustible(double parsecs);
+    public int getCantidad() {
+        return cantidad;
+    }
 }

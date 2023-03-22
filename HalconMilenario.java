@@ -1,22 +1,12 @@
-
 public class HalconMilenario extends Nave {
-
-    private int cantidadNaves;
-
-    public HalconMilenario(int cantidadPersonas, int cantidadNaves) {
-        super("HalcÃ³n Milenario", cantidadPersonas, 20.5);
-        this.cantidadNaves = cantidadNaves;
-    }
-
-    public int getCantidadNaves() {
-        return cantidadNaves;
+    public HalconMilenario(int cantidad) {
+        super("Halcón Milenario", 6, 20, cantidad);
     }
 
     @Override
-    public double calcularConsumoTotalCombustible(double parsecs) {
-        return cantidadNaves * parsecs * consumoCombustible;
+    public double calcularConsumo(double parsecs) {
+        return consumo * parsecs;
     }
 }
-
 
 
