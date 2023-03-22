@@ -1,10 +1,10 @@
 public class LanzaderaImperial extends Nave {
     public LanzaderaImperial(int cantidad) {
-        super("Lanzadera Imperial", 20, 30, cantidad);
+        super("Lanzadera Imperial", 8, 6.5, cantidad);
     }
 
     @Override
-    public double calcularConsumo(double parsecs) {
-        return consumo * parsecs;
+    public double calcularCombustible(double parsecs) {
+        return cantidad * consumo * parsecs;
     }
 }

@@ -1,10 +1,10 @@
 public class DestructorEstelar extends Nave {
     public DestructorEstelar(int cantidad) {
-        super("Destructor Estelar", 80, 120, cantidad);
+        super("Destructor Estelar", 50, 25.0, cantidad);
     }
 
     @Override
-    public double calcularConsumo(double parsecs) {
-        return consumo * parsecs;
+    public double calcularCombustible(double parsecs) {
+        return cantidad * consumo * parsecs;
     }
 }

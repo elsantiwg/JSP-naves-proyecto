@@ -1,12 +1,10 @@
 public class HalconMilenario extends Nave {
     public HalconMilenario(int cantidad) {
-        super("Halcón Milenario", 6, 20, cantidad);
+        super("Halcón Milenario", 6, 5.5, cantidad);
     }
 
     @Override
-    public double calcularConsumo(double parsecs) {
-        return consumo * parsecs;
+    public double calcularCombustible(double parsecs) {
+        return cantidad * consumo * parsecs;
     }
 }
-
-

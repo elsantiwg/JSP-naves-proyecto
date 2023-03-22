@@ -1,11 +1,10 @@
 public class AtAt extends Nave {
     public AtAt(int cantidad) {
-        super("AT-AT", 40, 20, cantidad);
+        super("At-At", 40, 18.0, cantidad);
     }
 
     @Override
-    public double calcularConsumo(double parsecs) {
-        return consumo * parsecs * 0.75;
+    public double calcularCombustible(double parsecs) {
+        return cantidad * (consumo - 4.5) * parsecs;
     }
 }
-
