@@ -8,7 +8,7 @@ pageEncoding="UTF-8"%>
     </head>
     <body>
         <h1>Ingreso de valores de naves</h1>
-        <form action="index.html" method="post">
+        <form action="https://github.com/elsantiwg/naves/blob/main/newjsp.jsp" method="post">
             <h2>Halcón Milenario</h2>
             <label>Capacidad:</label>
             <input type="number" name="hmCapacidad" required>
