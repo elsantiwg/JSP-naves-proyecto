@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Combustible de naves de la Alianza Rebelde</title>
+    </head>
+    <body>
+        <h1>Combustible de naves de la Alianza Rebelde</h1>
+        <form action="../src/java/MiServlet.java" method="post" ">
+
+            <fieldset>
+                <legend>Halcón Milenario</legend>
+                <p>
+                    <label for="halcon-milenario-personas">Número de personas que puede transportar:</label>
+                    <input type="number" name="halcon-milenario-personas" id="halcon-milenario-personas" required>
+                </p>
+                <p>
+                    <label for="halcon-milenario-consumo">Consumo de combustible en litros por Parsec:</label>
+                    <input type="number" name="halcon-milenario-consumo" id="halcon-milenario-consumo" step="any" min="0" required>
+                </p>
+                <p>
+                    <label for="halcon-milenario-cantidad">Cantidad de naves:</label>
+                    <input type="number" name="halcon-milenario-cantidad" id="halcon-milenario-cantidad" min="0" required>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Destructor Estelar</legend>
+                <p>
+                    <label for="destructor-estelar-personas">Número de personas que puede transportar:</label>
+                    <input type="number" name="destructor-estelar-personas" id="destructor-estelar-personas" required>
+                </p>
+                <p>
+                    <label for="destructor-estelar-consumo">Consumo de combustible en litros por Parsec:</label>
+                    <input type="number" name="destructor-estelar-consumo" id="destructor-estelar-consumo" step="any" min="0" required>
+                </p>
+                <p>
+                    <label for="destructor-estelar-cantidad">Cantidad de naves:</label>
+                    <input type="number" name="destructor-estelar-cantidad" id="destructor-estelar-cantidad" min="0" required>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Lanzadera Imperial</legend>
+                <p>
+                    <label for="lanzadera-imperial-personas">Número de personas que puede transportar:</label>
+                    <input type="number" name="lanzadera-imperial-personas" id="lanzadera-imperial-personas" required>
+                </p>
+                <p>
+                    <label for="lanzadera-imperial-consumo">Consumo de combustible en litros por Parsec:</label>
+                    <input type="number" name="lanzadera-imperial-consumo" id="lanzadera-imperial-consumo" step="any" min="0" required>
+                </p>
+                <p>
+                    <label for="lanzadera-imperial-cantidad">Cantidad de naves:</label>
+                    <input type="number" name="lanzadera-imperial-cantidad" id="lanzadera-imperial-cantidad" min="0" required>
+                </p>
+            </fieldset>
+            <fieldset>
+
+                <legend>Supremacy</legend>
+                <p>
+                    <label for="supremacy-personas">Número de personas que puede transportar:</label>
+                    <input type="number" name="supremacy-personas" id="supremacy-personas" required>
+                </p>
+                <p>
+                    <label for="supremacy-consumo">Consumo de combustible en litros por Parsec:</label>
+                    <input type="number" name="supremacy-consumo" id="supremacy-consumo" step="any" min="0" required>
+                </p>
+                <p>
+                    <label for="supremacy-cantidad">Cantidad de naves:</label>
+                    <input type="number" name="supremacy-cantidad" id="supremacy-cantidad" min="0" required>
+                </p>
+                <p>
+                    <label for="supremacy-naves-transportables">Cantidad de naves:</label>
+                    <input type="number" name="supremacy-naves-transportables" id="supremacy-naves-transportables" min="0" required>
+                </p>
+            </fieldset>
+                       <fieldset>
+                <legend>AtAt</legend>
+                <p>
+                    <label for="at-at-personas">Número de personas que puede transportar:</label>
+                    <input type="number" name="at-at-personass" id="at-at-personas" required>
+                </p>
+                <p>
+                    <label for="at-at-consumo">Consumo de combustible en litros por Parsec:</label>
+                    <input type="number" name="at-at-consumo" id="at-at-consumo" step="any" min="0" required>
+                </p>
+                <p>
+                    <label for="at-at-cantidad">Cantidad de naves:</label>
+                    <input type="number" name="at-at-cantidad" id="at-at-cantidad" min="0" required>
+                </p>
+            </fieldset>
+            <input type="submit" value="Calcular">
+        </form>
+        
+
+    </body>
+</html>
