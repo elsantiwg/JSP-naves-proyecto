@@ -1,10 +1,16 @@
-public class DestructorEstelar extends Nave {
-    public DestructorEstelar(int cantidad) {
-        super("Destructor Estelar", 50, 25.0, cantidad);
+public class DestructorEstelar extends NaveEspacial {
+    private int armamento;
+    
+    public DestructorEstelar(int capacidadTransporte, int consumoCombustible, int cantidadNaves, int armamento) {
+        super("Crucero estelar", capacidadTransporte, consumoCombustible, cantidadNaves);
+        this.armamento = armamento;
     }
-
-    @Override
-    public double calcularCombustible(double parsecs) {
-        return cantidad * consumo * parsecs;
+    
+    public int getArmamento() {
+        return armamento;
+    }
+    
+    public void setArmamento(int armamento) {
+        this.armamento = armamento;
     }
 }

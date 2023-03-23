@@ -1,10 +1,16 @@
-public class AtAt extends Nave {
-    public AtAt(int cantidad) {
-        super("At-At", 40, 18.0, cantidad);
+public class AtAt extends NaveEspacial {
+    private int altura;
+    
+    public AtAt(int capacidadTransporte, int consumoCombustible, int cantidadNaves, int altura) {
+        super("Transporte blindado todo terreno", capacidadTransporte, consumoCombustible, cantidadNaves);
+        this.altura = altura;
     }
-
-    @Override
-    public double calcularCombustible(double parsecs) {
-        return cantidad * (consumo - 4.5) * parsecs;
+    
+    public int getAltura() {
+        return altura;
+    }
+    
+    public void setAltura(int altura) {
+        this.altura = altura;
     }
 }

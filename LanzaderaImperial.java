@@ -1,10 +1,16 @@
-public class LanzaderaImperial extends Nave {
-    public LanzaderaImperial(int cantidad) {
-        super("Lanzadera Imperial", 8, 6.5, cantidad);
+public class LanzaderaImperial extends NaveEspacial {
+    private int capacidadCarga;
+    
+    public LanzaderaImperial(int capacidadTransporte, int consumoCombustible, int cantidadNaves, int capacidadCarga) {
+        super("Lanzadera clase Lambda", capacidadTransporte, consumoCombustible, cantidadNaves);
+        this.capacidadCarga = capacidadCarga;
     }
-
-    @Override
-    public double calcularCombustible(double parsecs) {
-        return cantidad * consumo * parsecs;
+    
+    public int getCapacidadCarga() {
+        return capacidadCarga;
+    }
+    
+    public void setCapacidadCarga(int capacidadCarga) {
+        this.capacidadCarga = capacidadCarga;
     }
 }

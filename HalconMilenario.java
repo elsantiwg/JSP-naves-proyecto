@@ -1,10 +1,16 @@
-public class HalconMilenario extends Nave {
-    public HalconMilenario(int cantidad) {
-        super("Halcón Milenario", 6, 5.5, cantidad);
+public class HalconMilenario extends NaveEspacial {
+    private int velocidadMaxima;
+    
+    public HalconMilenario(int capacidadTransporte, int consumoCombustible, int cantidadNaves, int velocidadMaxima) {
+        super("Carguero ligero corelliano", capacidadTransporte, consumoCombustible, cantidadNaves);
+        this.velocidadMaxima = velocidadMaxima;
     }
-
-    @Override
-    public double calcularCombustible(double parsecs) {
-        return cantidad * consumo * parsecs;
+    
+    public int getVelocidadMaxima() {
+        return velocidadMaxima;
+    }
+    
+    public void setVelocidadMaxima(int velocidadMaxima) {
+        this.velocidadMaxima = velocidadMaxima;
     }
 }

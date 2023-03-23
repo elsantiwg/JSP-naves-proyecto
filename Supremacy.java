@@ -1,13 +1,16 @@
-public class Supremacy extends Nave {
-    private int navesTransportadas;
-
-    public Supremacy(int cantidad, int navesTransportadas) {
-        super("Supremacy", 20000, 100.0, cantidad);
-        this.navesTransportadas = navesTransportadas;
+public class Supremacy extends NaveEspacial {
+    private int longitud;
+    
+    public Supremacy(int capacidadTransporte, int consumoCombustible, int cantidadNaves, int longitud) {
+        super("Nave insignia clase Mega", capacidadTransporte, consumoCombustible, cantidadNaves);
+        this.longitud = longitud;
     }
-
-    @Override
-    public double calcularCombustible(double parsecs) {
-        return cantidad * (consumo + (0.1 * navesTransportadas)) * parsecs;
+    
+    public int getLongitud() {
+        return longitud;
+    }
+    
+    public void setLongitud(int longitud) {
+        this.longitud = longitud;
     }
 }
